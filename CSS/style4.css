@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "poppins", sans-serif;
+    --color1: #fff;
+    --color2: #181818;
+    min-height: 100vh;
+    width: 95%;
+    background-image:linear-gradient(rgba(164, 170, 197, 0.7),rgba(10, 18, 51, 0.7)), url(/New/Img/Muni.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav-bar {
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color:var(--color2);
+    padding: 12px 20px;
+}
+
+.logo img {
+    width: 80px;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    padding-left: 50px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s;
+}
+.menu li a:hover:after{
+    width: 100%;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    color:var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check { display: none;}
+
+.text-box {
+    font-size: 50px;
+    color: var(--color1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.box-image {
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius:15px 15px 0 0;
+}
+
+.box{
+    background: rgb(240, 209, 209);
+    width: 600px;
+    height: 650x;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box-2{
+    background: rgb(240, 209, 209);
+    width: 600px;
+    height: 650x;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box-3{
+    background: rgb(240, 209, 209);
+    width: 600px;
+    height: 650x;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box-4{
+    background: rgb(240, 209, 209);
+    width: 600px;
+    height: 650x;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.Pic-1 {
+    background-image: url(/New/Img/Church.jpg);
+}
+
+.Pic-2{
+    background-image: url(/New/Img/Sand.jpg);
+}
+.Pic-3{
+    background-image: url(/New/Img/Lake.jpg);
+}
+.Pic-4{
+    background-image: url(/New/Img/Malacanang.jpg);
+}
+
+@media screen and (max-width:600px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s
+        ;
+    }
+
+    .menu li {
+        margin-top: 50px;
+
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        padding-top: 80px;
+    }
+    
+    .box-image {
+        height: 250px;
+        margin-bottom: 15px;
+        background-size: cover;
+        border-radius:15px 15px 0 0;
+    }
+    
+    .box{
+        background: rgb(240, 209, 209);
+        width: 400px;
+        height: 650x;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .box-2{
+        background: rgb(240, 209, 209);
+        width: 320px;
+        height: 650x;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .box-3{
+        background: rgb(240, 209, 209);
+        width: 320px;
+        height: 650x;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .box-4{
+        background: rgb(240, 209, 209);
+        width: 320px;
+        height: 650x;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+
+    
+}
